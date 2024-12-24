@@ -20,3 +20,9 @@ vim.keymap.set("n", "<C-h>", "<C-w>h")
 
 vim.keymap.set({ "v" }, "<leader>/", "gc", { remap = true })
 vim.keymap.set({ "n" }, "<leader>/", "gcc", { remap = true }) -- Use with leader n to comment n lines
+
+
+vim.keymap.set("i", "<C-l>", "<Right>", { silent = true })
+vim.keymap.set("i", "<C-h>", "<Left>", { silent = true, remap = true })
+vim.keymap.set("i", "<C-k>", "<Up>", { silent = true })
+vim.keymap.set("i", "<C-j>", "<Down>", { silent = true })
