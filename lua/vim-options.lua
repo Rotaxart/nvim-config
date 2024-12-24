@@ -14,3 +14,9 @@ end, { noremap = true, silent = true })
 vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+
+vim.keymap.set({ "v" }, "<leader>/", "gc", { remap = true })
+vim.keymap.set({ "n" }, "<leader>/", "gcc", { remap = true }) -- Use with leader n to comment n lines
